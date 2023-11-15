@@ -1,5 +1,6 @@
 import { PageState } from "./pages.interfaces.ts";
 import {Statuses} from "./statuses.interfaces.ts";
+import {AuthState} from "./auth.interfaces";
 
 export type Request = {
     onError?: (error?: any) => void;
@@ -7,6 +8,7 @@ export type Request = {
 }
 
 export type States = {
+    auth: AuthState;
     statuses: Statuses;
     pages: PageState;
 }

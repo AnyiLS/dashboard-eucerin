@@ -4,7 +4,7 @@ import {StyledButton} from "./Button.styles.ts";
 
 interface IButton {
     children: React.ReactNode;
-    onClick?: React.MouseEventHandler<HTMLButtonElement>;
+    onClick?: any;
     color: string;
     text?: string;
 }

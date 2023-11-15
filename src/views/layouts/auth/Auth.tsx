@@ -29,8 +29,8 @@ const Auth: React.FC<IAuth> = ({ }): JSX.Element => {
         let redux = JSON.parse(localStorage.getItem('persist:root')!);
         let login = JSON.parse(redux.auth ?? "");
         
-        if(login.auth.token) {
-            window.location.href = '/admin/inactive-users';
+        if(login.auth.token !== "") {
+            window.location.href = '/admin/dashboard';
         }
     }, [])
 
