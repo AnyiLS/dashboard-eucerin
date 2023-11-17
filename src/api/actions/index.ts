@@ -3,6 +3,8 @@ import useStatusesActions from "./statuses";
 import usePagesActions from "./pages";
 import useTeamActions from "./team";
 import useAuthActions from "./auth";
+import useDashboardActions from "./dashboard";
+import useUsersActions from "./users";
 
 const useActions = () => {
     /** Variables */
@@ -11,6 +13,8 @@ const useActions = () => {
     return {
         dispatch,
         useAuthActions,
+        useDashboardActions,
+        useUsersActions,
         useStatusesActions,
         usePagesActions,
         useTeamActions

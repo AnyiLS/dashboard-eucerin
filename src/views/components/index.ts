@@ -1,6 +1,7 @@
 import React from "react";
 
 const Button = React.lazy(() => import("./button"));
+const Card = React.lazy(() => import("./card"));
 const Dropdown = React.lazy(() => import("./dropdown"));
 const LinkSidebar = React.lazy(() => import("./link-sidebar"));
 const Modal = React.lazy(() => import("./modal"));
@@ -18,7 +19,8 @@ const useComponents = () => {
         Input,
         Separator,
         Table,
-        Loading
+        Loading,
+        Card
     };
 }
 

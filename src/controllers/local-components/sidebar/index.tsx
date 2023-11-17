@@ -19,42 +19,35 @@ export interface IRoutesSidebar {
 const useSidebar = () => {
     const routes: IRoutesSidebar[] = [
         {
-            title: "Usuarios Inactivod",
+            title: "Dashboard",
             links: [
                 {
-                    path: "/admin/active-users5",
-                    to: "/admin/active-users5",
+                    path: "/admin/dashboard",
+                    to: "/admin/dashboard",
                     name: "Dashboard",
                     icon: <img src="/graficas.png" className="w-6 h-6"/>
                 },
             ]
         },
         {
-            title: "Usuarios Registrados",
+            title: "Activar Usuarios",
             links: [
                 {
-                    path: "/admin/active-users6",
-                    to: "/admin/active-users6",
-                    name: "Dermoconsejo",
-                    icon: <img src="/col.png" className="w-6 h-6"/>
+                    path: "/admin/inactive-users",
+                    to: "/admin/inactive-users",
+                    name: "Usuarios Inactivos",
+                    icon: <img src="/activos.png" className="w-8 h-8"/>
                 },
+            ]
+        },
+        {
+            title: "Usuarios",
+            links: [
                 {
-                    path: "/admin/active-users1",
-                    to: "/admin/active-users1",
-                    name: "Visita Médica Col",
-                    icon: <img src="/dermo.png" className="w-6 h-6"/>
-                },
-                {
-                    path: "/admin/active-users2",
-                    to: "/admin/active-users2",
-                    name: "Dermoconsejo",
-                    icon: <img src="/ecu.png" className="w-6 h-6"/>
-                },
-                {
-                    path: "/admin/active-users3",
-                    to: "/admin/active-users3",
-                    name: "Visita Médica Ecu",
-                    icon: <img src="/ecu-dermo.png" className="w-6 h-6"/>
+                    path: "/admin/active-users",
+                    to: "/admin/active-users",
+                    name: "Usuarios Registrados",
+                    icon: <img src="/inactive.png" className="w-8 h-8"/>
                 },
             ]
         },
@@ -62,26 +55,26 @@ const useSidebar = () => {
             title: "Quiz",
             links: [
                 {
-                    path: "/admin/world/1",
-                    to: "/admin/world/1",
+                    path: "/admin/quiz/1",
+                    to: "/admin/quiz/1",
                     name: "Dermoconsejo",
                     icon: <img src="/lapiz.png" className="w-6 h-8"/>
                 },
                 {
-                    path: "/admin/world/2",
-                    to: "/admin/world/2",
+                    path: "/admin/quiz/2",
+                    to: "/admin/quiz/2",
                     name: "Visita Médica Col",
                     icon: <img src="/col.png" className="w-6 h-6"/>
                 },
                 {
-                    path: "/admin/world/3",
-                    to: "/admin/world/3",
-                    name: "Dermoconsejo",
+                    path: "/admin/quiz/3",
+                    to: "/admin/quiz/3",
+                    name: "Dermoconsejo Ecu",
                     icon: <img src="/dermoecu.png" className="w-6 h-8"/>
                 },
                 {
-                    path: "/admin/world/4",
-                    to: "/admin/world/4",
+                    path: "/admin/quiz/4",
+                    to: "/admin/quiz/4",
                     name: "Visita Médica Ecu",
                     icon: <img src="/ecu.png" className="w-6 h-6"/>
                 },
@@ -91,26 +84,26 @@ const useSidebar = () => {
             title: "certificaciones",
             links: [
                 {
-                    path: "/admin/scores/1",
-                    to: "/admin/scores/1",
+                    path: "/admin/certificaciones/1",
+                    to: "/admin/certificaciones/1",
                     name: "Dermoconsejo Col",
                     icon: <img src="/certificado.png" className="w-6 h-8"/>
                 },
                 {
-                    path: "/admin/scores/2",
-                    to: "/admin/scores/2",
+                    path: "/admin/certificaciones/2",
+                    to: "/admin/certificaciones/2",
                     name: "Visita Médica Col",
                     icon: <img src="/col-visi.png" className="w-6 h-8"/>
                 },
                 {
-                    path: "/admin/scores/3",
-                    to: "/admin/scores/3",
+                    path: "/admin/certificaciones/3",
+                    to: "/admin/certificaciones/3",
                     name: "Dermoconsejo Ecu",
                     icon: <img src="/certi-ecu.png" className="w-6 h-8"/>
                 },
                 {
-                    path: "/admin/scores/4",
-                    to: "/admin/scores/4",
+                    path: "/admin/certificaciones/4",
+                    to: "/admin/certificaciones/4",
                     name: "Visita Médica Ecu",
                     icon: <img src="/visi-ecu.png" className="w-6 h-8"/>
                 },

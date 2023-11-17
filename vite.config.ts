@@ -5,4 +5,4 @@ import macrosPlugin from "vite-plugin-babel-macros";
 
 export default defineConfig({
   plugins: [react(), tsconfigPaths(), macrosPlugin()]
-});
+});   

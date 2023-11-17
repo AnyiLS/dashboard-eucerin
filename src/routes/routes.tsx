@@ -14,9 +14,10 @@ const routes = (): Routes[] => {
     const {
         InactiveUsers,
         ActiveUsers,
-        Scores,
-        Worlds,
-        Login
+        Login,
+        Dashboard,
+        Quiz,
+        Certificaciones
     } = useScreens();
 
     return [
@@ -33,23 +34,29 @@ const routes = (): Routes[] => {
             layout: "/admin",
         },
         {
-            path: "scores/:id",
-            component: <Scores/>,
-            name: "Puntajes",
-            layout: "/admin",
-        },
-        {
-            path: "world/:id",
-            component: <Worlds/>,
-            name: "Mundos",
-            layout: "/admin",
-        },
-        {
             path: "login",
             component: <Login/>,
             name: "Login",
             layout: "/auth",
-        }
+        },
+        {
+            path: "dashboard",
+            component: <Dashboard/>,
+            name: "Dashboard",
+            layout: "/admin",
+        },
+        {
+            path: "quiz/:id",
+            component: <Quiz/>,
+            name: "Quiz",
+            layout: "/admin",
+        },
+        {
+            path: "certificaciones/:id",
+            component: <Certificaciones/>,
+            name: "Certificaciones",
+            layout: "/admin",
+        },
     ]
 }
 
