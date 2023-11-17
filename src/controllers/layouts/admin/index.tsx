@@ -19,9 +19,7 @@ const useAdmin = () => {
         let activeRoute = "Main Dashboard";
         for (let i = 0; i < routes.length; i++) {
             if (
-                window.location.href.indexOf(
-                    routes[i].layout + "/" + routes[i].path
-                ) !== -1
+                window.location.href.includes(routes[i].layout+'/'+routes[i].path.slice(0, -4))
             ) {
                 setCurrentRoute(routes[i].name);
             }
